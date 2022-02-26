@@ -23,7 +23,18 @@ const Work = () => {
   
 
   const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{y:100, opacity: 0}]);
 
+    setTimeout(() => {
+      setAnimateCard([{y:0, opacity: 1}]);
+
+      if(item === 'All'){
+        setFilterWork(works);
+      }else{
+        setFilterWork(works.filter((work) => work.tags.includes(item)))
+      }
+    }, 500)
   }
   return (
     <>
@@ -53,7 +64,7 @@ const Work = () => {
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{scale: [0, 1]}}
-                    whileHover={{scale: [1, 1.9]}}
+                    whileHover={{scale: [1, 1.4]}}
                     transition={{duration: 0.25}}
                     className="app__flex"
                   >
@@ -64,7 +75,7 @@ const Work = () => {
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{scale: [0, 1]}}
-                    whileHover={{scale: [1, 1.9]}}
+                    whileHover={{scale: [1, 1.4]}}
                     transition={{duration: 0.25}}
                     className="app__flex"
                   >

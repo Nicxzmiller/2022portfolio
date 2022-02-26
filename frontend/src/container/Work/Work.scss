@@ -122,3 +122,23 @@
         }
     }
 }
+
+.app__work-content{
+    width: 100%;
+    padding: 0.5rem;
+    position: relative;
+    flex-direction: column;
+
+    h4{
+        margin-top: 1rem;
+        line-height: 1.5;
+    }
+
+    .app__work-tag{
+        position: absolute;
+        padding: 0.5rem 1rem;
+        background-color: var(--white-color);
+        top: -25px;
+        border-radius: 10px 10px 0 0;
+    }
+}
