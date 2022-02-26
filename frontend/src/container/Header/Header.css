@@ -27,13 +27,13 @@
   padding: 6rem 2rem 0;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2000px) {
   .app__header {
     padding-top: 8rem;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   .app__header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .app__header {
     padding: 6rem 1rem 2rem;
   }
@@ -68,7 +68,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   .app__header-info {
     width: 100%;
     margin-right: 0rem;
@@ -206,7 +206,7 @@
   }
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1200px) {
   .app__header-circles {
     width: 100%;
     -webkit-box-orient: horizontal;
