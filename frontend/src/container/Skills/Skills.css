@@ -76,7 +76,7 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
 }
 
 .app__skills-item div img {
@@ -85,8 +85,9 @@
 }
 
 .app__skills-item div:hover {
-  -webkit-box-shadow: 0 0 25px #fef4f5;
-          box-shadow: 0 0 25px #fef4f5;
+  -webkit-box-shadow: 0 0 5px var(--gray-color);
+          box-shadow: 0 0 5px var(--gray-color);
+  opacity: 85%;
 }
 
 @media screen and (min-width: 2000px) {
