@@ -116,4 +116,96 @@
     margin-top: 1rem;
   }
 }
+
+.app__skills-exp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .app__skills-exp {
+    margin-top: 2rem;
+  }
+}
+
+.app__skills-exp-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.app__skills-exp-works {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.app__skills-exp-works .app__skills-exp-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.app__skills-exp-works .app__skills-exp-work h4 {
+  font-weight: 500;
+}
+
+.app__skills-exp-works .app__skills-exp-work p {
+  font-weight: 400;
+  color: var(--gray-color);
+  margin-top: 5px;
+}
+
+.app__skills-exp-year {
+  margin-right: 3rem;
+}
+
+.app__skills-exp-year p {
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 450px) {
+  .app__skills-exp-year {
+    margin-right: 1rem;
+  }
+}
 /*# sourceMappingURL=Skills.css.map */
