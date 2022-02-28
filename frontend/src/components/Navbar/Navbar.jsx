@@ -13,7 +13,7 @@ const [toggle, setToggle] = useState(false)
         <img src={images.logo} alt="logo" />
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'about', 'work','skills', 'testimonials', 'contact'].map((item) => (
+        {['home', 'about', 'work','skills', 'testimonial', 'contact'].map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}>
             <div></div>
             <a href={`#${item}`}>{item}</a>
@@ -28,7 +28,7 @@ const [toggle, setToggle] = useState(false)
             <motion.div whileInView={{x: [300, 0]}} transition={{duration: 0.85, ease:'easeOut'}}>
               <HiX onClick={() => setToggle(false)}/>
               <ul>
-                {['home', 'about', 'work','skills', 'testimonials', 'contact'].map((item) => (
+                {['home', 'about', 'work','skills', 'testimonial', 'contact'].map((item) => (
                   <li key={item}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                   </li>
