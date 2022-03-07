@@ -52,7 +52,7 @@ const handleSubmit = () => {
           <input className='p-text' type="email" name="email"  placeholder='Your Email' value={email} onChange={handleChangeInput}/>
         </div>
         <div>
-          <textarea className='p-text' placeholder='Message' value={message} name={message} onChange={handleChangeInput} id="" />
+          <textarea className='p-text' placeholder='Message' value={message} name="message" onChange={handleChangeInput} id="" rows="" cols=""/>
         </div>
         <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'sending' : 'Send Message'}</button>
       </div>
